@@ -23,14 +23,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY")
+# SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = '&z5j+e^w9nabjzc2zp=ne3v#j%09q6%#tz#mh^rn8qwo!^1wil'
 
-# '&z5j+e^w9nabjzc2zp=ne3v#j%09q6%#tz#mh^rn8qwo!^1wil'
+# 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'todo-aymammet.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -91,10 +92,10 @@ WSGI_APPLICATION = 'todoAPI.wsgi.application'
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "todo",
-        'USER': 'postgres',
-        'PASSWORD' : 'postgres',
-        'HOST' : 'localhost',
+        'NAME': "d8b0squa5j31ip",
+        'USER': 'kgzpnadlhcyzrs',
+        'PASSWORD' : '7dbe844a3fc740e3b3392e7dcd0165b2ebe1d13496291b0399293de8ead22c22',
+        'HOST' : 'ec2-44-193-188-118.compute-1.amazonaws.com',
         'PORT' : '5432',
     }
 }
@@ -137,7 +138,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 CORS_ORIGIN_ALLOW_ALL = True
 
