@@ -4,6 +4,6 @@ from .base import *
 environment = os.getenv('DJANGO_SETTINGS_MODULE', 'local')
 
 if environment.endswith('production'):
-    from .production import *
+    from todoAPI.settings.production import *
 else:
-    from .local import *
+    from todoAPI.settings.local import *
