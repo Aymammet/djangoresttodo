@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from django.core.exceptions import NON_FIELD_ERRORS
-environment = os.getenv('DJANGO_SETTINGS_MODULE', 'local')
+# environment = os.getenv('DJANGO_SETTINGS_MODULE', 'local')
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -148,5 +148,3 @@ REST_FRAMEWORK = {
    'DEFAULT_PAGINATION_CLASS':'rest_framework.pagination.PageNumberPagination',
    'PAGE_SIZE': 5
 }
-
-# django.heroku.settings(locals())
