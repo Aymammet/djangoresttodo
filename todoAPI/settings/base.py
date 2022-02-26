@@ -25,13 +25,8 @@ BASE_DIR = get_dir(get_dir(get_dir(os.path.abspath(__file__))))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
 
 SECRET_KEY = '&z5j+e^w9nabjzc2zp=ne3v#j%09q6%#tz#mh^rn8qwo!^1wil'
-
-
-# SECURITY WARNING: don't run with debug turned on in production!
-
 
 
 # Application definition
