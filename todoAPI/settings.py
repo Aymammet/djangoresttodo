@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from django.core.exceptions import NON_FIELD_ERRORS
-# import django.heroku
+environment = os.getenv('DJANGO_SETTINGS_MODULE', 'local')
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -92,6 +92,18 @@ WSGI_APPLICATION = 'todoAPI.wsgi.application'
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "todo",
+        'USER': 'postgres',
+        'PASSWORD' : 'postgres',
+        'HOST' : 'localhost',
+        'PORT' : '5432',
+    }
+}
+
+if environment.endswith('production'):
+    DATABASES = {
+   'default': {
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': "d8b0squa5j31ip",
         'USER': 'kgzpnadlhcyzrs',
         'PASSWORD' : '7dbe844a3fc740e3b3392e7dcd0165b2ebe1d13496291b0399293de8ead22c22',
@@ -99,8 +111,7 @@ DATABASES = {
         'PORT' : '5432',
     }
 }
-
-
+    
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
