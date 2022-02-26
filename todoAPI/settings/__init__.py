@@ -3,7 +3,7 @@ from .base import *
 
 environment = os.getenv('DJANGO_SETTINGS_MODULE')
 print(environment)
-from .production import *
+from .pxasd import *
 
 # if environment.endswith('production'):
 # else:
