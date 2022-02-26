@@ -4,7 +4,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://todo-aymammet.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 DATABASES = {
    'default': {
