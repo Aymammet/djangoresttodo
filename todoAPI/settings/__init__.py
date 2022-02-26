@@ -3,7 +3,8 @@ from .base import *
 
 environment = os.getenv('DJANGO_SETTINGS_MODULE')
 print(environment)
-if environment.endswith('production'):
-    from todoAPI.settings.production import *
-else:
-    from todoAPI.settings.local import *
+from todoAPI.settings.production import *
+
+# if environment.endswith('production'):
+# else:
+    # from todoAPI.settings.local import *
