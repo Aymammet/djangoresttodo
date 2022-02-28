@@ -15,7 +15,9 @@ import os
 #     }
 # }
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+# SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = '&z5j+e^w9nabjzc2zp=ne3v#j%09q6%#tz#mh^rn8qwo!^1wil'
+
 
 DEBUG = False
 
