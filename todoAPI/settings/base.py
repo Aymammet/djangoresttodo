@@ -16,15 +16,15 @@ from django.core.exceptions import NON_FIELD_ERRORS
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # get_dir = os.path.dirname
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-SECRET_KEY='&z5j+e^w9nabjzc2zp=ne3v#j%09q6%#tz#mh^rn8qwo!^1wil'
+SECRET_KEY = '&z5j+e^w9nabjzc2zp=ne3v#j%09q6%#tz#mh^rn8qwo!^1wil'
 
 DEBUG = False
 
